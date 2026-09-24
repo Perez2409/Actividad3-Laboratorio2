@@ -44,7 +44,7 @@ function App() {
   };
 
   return (
-    <div className="mx-auto max-w-6xl space-y-4 p-6">
+    <div className="mx-auto max-w-7xl space-y-4 p-6">
       <header>
         <h1 className="text-2xl font-semibold text-foreground">Simulador de Triage Hospitalario</h1>
         <p className="text-sm text-muted-foreground">
@@ -60,7 +60,7 @@ function App() {
         </TabsList>
 
         <TabsContent value="live" className="space-y-4">
-          <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-start">
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-[1fr_1fr_1.6fr] lg:items-start">
             <Card>
               <CardHeader>
                 <CardTitle>Configuración</CardTitle>

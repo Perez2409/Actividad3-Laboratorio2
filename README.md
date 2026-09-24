@@ -17,7 +17,7 @@ paso pensada para audiencia no técnica, con analogías cotidianas.
   cantidad configurable desde la UI.
 - **El bug, en vivo:** con el switch "Sincronización activada" apagado, dos
   estaciones pueden asignar la misma cama a dos pacientes distintos — se ve en
-  el log de eventos ("⚠ Cama X fue asignada dos veces").
+  el log de eventos ("Cama X fue asignada dos veces").
 - **La solución, en vivo:** el mismo switch, sin reiniciar la simulación,
   activa un mutex (`Atomics.compareExchange` + `Atomics.wait`/`notify`) que
   elimina el choque.

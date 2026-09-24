@@ -52,7 +52,7 @@ export function EventLog({ events }: EventLogProps) {
               <TableCell className="text-xs whitespace-nowrap text-muted-foreground">
                 {'at' in event ? formatTimestamp(event.at) : ''}
               </TableCell>
-              <TableCell>{describeEvent(event)}</TableCell>
+              <TableCell style={{ whiteSpace: 'normal' }}>{describeEvent(event)}</TableCell>
             </TableRow>
           ))}
         </TableBody>
